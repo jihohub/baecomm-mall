@@ -25,6 +25,7 @@ npm start
 ### `고민한 부분`
 
 - 평상시에 React-Query로 손쉽게 캐싱했던 부분을 세션스토리지를 사용해 구현해 보았습니다.
+- You can pass "select" as query params with comma-separated values to select specific data.를 참조하여 필요한 데이터만 받을 수 있도록 하였습니다.
 
 
 ### `기타 사항`
