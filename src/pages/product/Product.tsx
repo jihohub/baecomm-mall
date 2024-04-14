@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
 import Loading from "../../components/loading/Loading";
-import ProductDetail from "../../components/product/product/ProductDetail";
+import ProductDetail from "../../components/product/productDetail/ProductDetail";
 import useProduct from "../../hooks/useProduct";
 
 const Wrapper = styled.div`
@@ -46,7 +46,7 @@ const Product = () => {
     return (
       <Wrapper>
         <ErrorMessage>
-          에러가 발생하였습니다
+          에러가 발생하였습니다.
           <Button onClick={() => navigate("/")}>홈으로 돌아가기</Button>
         </ErrorMessage>
       </Wrapper>

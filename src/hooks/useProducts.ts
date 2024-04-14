@@ -75,11 +75,11 @@ const useProducts = (): [
     fetchProducts();
   }, [fetchProducts, query, skip]);
 
-  const loadMoreProducts = () => {
+  const fetchMoreProducts = () => {
     setSkip((prev) => prev + LIMIT);
   };
 
-  return [products, hasMore, isLoading, error, loadMoreProducts, updateQuery];
+  return [products, hasMore, isLoading, error, fetchMoreProducts, updateQuery];
 };
 
 export default useProducts;

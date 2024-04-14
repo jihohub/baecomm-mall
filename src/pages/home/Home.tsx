@@ -46,7 +46,7 @@ const Button = styled.button`
 
 const Home = () => {
   const navigate = useNavigate();
-  const [products, hasMore, isLoading, error, loadMoreProducts, updateQuery] =
+  const [products, hasMore, isLoading, error, fetchMoreProducts, updateQuery] =
     useProducts();
 
   const handleSearch = (query: string) => {
@@ -72,7 +72,7 @@ const Home = () => {
           <ProductItem key={product.id} {...product} />
         ))}
       </ProductsDiv>
-      {hasMore && <Button onClick={loadMoreProducts}>더 보기</Button>}
+      {hasMore && <Button onClick={fetchMoreProducts}>더 보기</Button>}
       {isLoading && <Loading />}
     </Wrapper>
   );
