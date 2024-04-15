@@ -5,6 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 실행 방법
 
 ```
+git clone https://github.com/jihohub/baecomm-mall.git
+cd baecomm-mall
+npm install
 npm start
 ```
 
